@@ -3,138 +3,300 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cybersecurity Course - ₹499</title>
+<title>Ethical Hacking Course | ₹499</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
 
 body{
-background:#0b1020;
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-padding:20px;
-background-image:
-radial-gradient(circle at top right,#2563eb33,transparent 30%),
-radial-gradient(circle at bottom left,#06b6d433,transparent 30%);
+background:#090909;
 color:#fff;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at top right,#FFD70025,transparent 35%),
+radial-gradient(circle at bottom left,#b8860b30,transparent 40%);
+z-index:-2;
+}
+
+body::after{
+content:"";
+position:fixed;
+width:500px;
+height:500px;
+border-radius:50%;
+background:#FFD70015;
+filter:blur(90px);
+top:-150px;
+right:-120px;
+animation:float 8s ease-in-out infinite;
+z-index:-1;
+}
+
+@keyframes float{
+50%{
+transform:translateY(40px);
+}
+}
+
+.container{
+width:92%;
+max-width:420px;
+margin:35px auto;
 }
 
 .card{
-max-width:420px;
-width:100%;
-background:#111827;
-border:1px solid rgba(255,255,255,.08);
-border-radius:20px;
-padding:35px;
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,215,0,.2);
+backdrop-filter:blur(18px);
+padding:30px;
+border-radius:25px;
+box-shadow:0 0 35px rgba(255,215,0,.08);
 text-align:center;
-box-shadow:0 20px 40px rgba(0,0,0,.4);
 }
 
-.icon{
-font-size:55px;
-margin-bottom:15px;
+.logo{
+width:90px;
+height:90px;
+margin:auto;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:42px;
+background:linear-gradient(45deg,#FFD700,#C89B3C);
+box-shadow:0 0 35px rgba(255,215,0,.5);
+margin-bottom:18px;
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+50%{
+transform:scale(1.05);
+}
 }
 
 h1{
 font-size:30px;
-margin-bottom:10px;
+font-weight:800;
+margin-bottom:8px;
+}
+
+.sub{
+color:#d1d5db;
+font-size:15px;
+line-height:1.6;
+margin-bottom:20px;
 }
 
 .price{
-font-size:40px;
-font-weight:700;
-color:#22c55e;
-margin:18px 0;
+font-size:44px;
+font-weight:800;
+color:#FFD700;
+margin-bottom:20px;
 }
 
-.desc{
-color:#cbd5e1;
-line-height:1.6;
-margin-bottom:25px;
+.badges{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+margin-bottom:22px;
 }
 
-ul{
+.badge{
+background:#161616;
+border:1px solid #FFD70030;
+padding:8px 12px;
+border-radius:30px;
+font-size:13px;
+}
+
+.section{
+margin-top:28px;
 text-align:left;
-margin-bottom:25px;
-padding-left:20px;
-color:#e5e7eb;
 }
 
-li{
-margin:10px 0;
+.section h2{
+font-size:20px;
+color:#FFD700;
+margin-bottom:12px;
+}
+
+.list{
+list-style:none;
+}
+
+.list li{
+padding:10px 0;
+border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .btn{
 display:block;
 width:100%;
-padding:15px;
-background:#229ED9;
-border-radius:12px;
+padding:16px;
+background:linear-gradient(90deg,#FFD700,#b8860b);
+color:#000;
 text-decoration:none;
+font-weight:700;
+border-radius:14px;
 font-size:18px;
-font-weight:600;
-color:white;
+margin-top:25px;
 transition:.3s;
 }
 
 .btn:hover{
-transform:translateY(-2px);
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(255,215,0,.35);
 }
 
 .timer{
 margin-top:18px;
-font-size:14px;
-color:#94a3b8;
+font-size:15px;
+color:#ddd;
+}
+
+.faq{
+margin-top:15px;
+}
+
+details{
+background:#151515;
+padding:14px;
+border-radius:12px;
+margin-bottom:10px;
+}
+
+summary{
+cursor:pointer;
+font-weight:600;
+}
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:20px;
+width:60px;
+height:60px;
+border-radius:50%;
+background:#25D366;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+text-decoration:none;
+color:white;
+box-shadow:0 0 25px rgba(37,211,102,.5);
 }
 </style>
 </head>
 
 <body>
 
+<div class="container">
+
 <div class="card">
 
-<div class="icon">🛡️</div>
+<div class="logo">🛡️</div>
 
-<h1>Cybersecurity Course</h1>
+<h1>Ethical Hacking Course</h1>
+
+<p class="sub">
+Master ethical hacking fundamentals through structured lessons and practical demonstrations.
+</p>
 
 <div class="price">₹499</div>
 
-<div class="desc">
-Learn practical cybersecurity concepts through beginner-friendly lessons and hands-on demonstrations.
+<div class="badges">
+<div class="badge">✔ Beginner Friendly</div>
+<div class="badge">✔ Practical Labs</div>
+<div class="badge">✔ Community Support</div>
+<div class="badge">✔ Certificate*</div>
 </div>
 
-<ul>
-<li>✔️ Beginner-friendly modules</li>
-<li>✔️ Practical demonstrations</li>
-<li>✔️ Telegram support community</li>
-<li>✔️ Lifetime access to course materials (if applicable)</li>
-</ul>
-
-<a class="btn" href="https://t.me/MrIronmanMark47">
-Join on Telegram
+<a class="btn" href="https://wa.me/919911629525">
+💬 Enroll on WhatsApp
 </a>
 
 <div class="timer">
-Redirecting to Telegram in <span id="sec">3</span> seconds...
+Redirecting to WhatsApp in <span id="sec">3</span> seconds...
+</div>
+
+<div class="section">
+<h2>What You'll Learn</h2>
+
+<ul class="list">
+<li>🔐 Cybersecurity Fundamentals</li>
+<li>🌐 Networking Basics</li>
+<li>🐧 Linux Essentials</li>
+<li>🛡️ Web Security Concepts</li>
+<li>⚙️ Security Tools Overview</li>
+<li>📱 Mobile Security Basics</li>
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq">
+
+<details open>
+<summary>Is this beginner friendly?</summary>
+<p>Yes. The course starts with the basics and gradually introduces more advanced topics.</p>
+</details>
+
+<details>
+<summary>How will I receive the course?</summary>
+<p>You'll receive enrollment details after contacting us on WhatsApp.</p>
+</details>
+
+<details>
+<summary>What is the course fee?</summary>
+<p>The enrollment fee is ₹499.</p>
+</details>
+
 </div>
 
 </div>
+
+</div>
+
+</div>
+
+<a class="whatsapp" href="https://wa.me/919911629525">💬</a>
 
 <script>
-let s=3;
-const t=document.getElementById("sec");
+let sec=3;
 
 const timer=setInterval(()=>{
-s--;
-t.textContent=s;
-if(s<=0){
+
+sec--;
+
+document.getElementById("sec").innerText=sec;
+
+if(sec<=0){
+
 clearInterval(timer);
-window.location.href="https://t.me/MrIronmanMark47";
+
+window.location.href="https://wa.me/919911629525";
+
 }
+
 },1000);
 </script>
 
